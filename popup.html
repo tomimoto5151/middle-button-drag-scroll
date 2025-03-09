@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Middle Button Scroll Settings</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      width: 280px;
+      padding: 15px;
+      font-size: 14px;
+      margin: 0;
+    }
+    h1 {
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+      color: #333;
+    }
+    .slider-container {
+      margin-bottom: 15px;
+    }
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    .slider-value-container {
+      display: flex;
+      align-items: center;
+    }
+    input[type="range"] {
+      width: 100%;
+      height: 5px;
+      margin: 8px 0;
+    }
+    input[type="number"] {
+      width: 50px;
+      margin-left: 5px;
+      text-align: right;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 2px 5px;
+    }
+    .checkbox-container {
+      margin-bottom: 15px;
+    }
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    button {
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 13px;
+      transition: all 0.2s;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    #reset {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      color: #333;
+    }
+    #save {
+      background-color: #4285f4;
+      border: none;
+      color: white;
+    }
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    .checkbox-label input {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Middle Button Scroll Settings</h1>
+  
+  <div class="slider-container">
+    <div class="slider-header">
+      <span>Forward Speed</span>
+      <div class="slider-value-container">
+        <input type="number" id="forwardSpeedInput" min="0" max="100" value="50">
+      </div>
+    </div>
+    <input type="range" id="forwardSpeed" min="0" max="100" value="50">
+  </div>
+  
+  <div class="slider-container">
+    <div class="slider-header">
+      <span>Backward Speed</span>
+      <div class="slider-value-container">
+        <input type="number" id="backwardSpeedInput" min="0" max="100" value="40">
+      </div>
+    </div>
+    <input type="range" id="backwardSpeed" min="0" max="100" value="40">
+  </div>
+  
+  <div class="slider-container">
+    <div class="slider-header">
+      <span>Sensitivity</span>
+      <div class="slider-value-container">
+        <input type="number" id="sensitivityInput" min="0.5" max="3.0" step="0.1" value="1.0">
+      </div>
+    </div>
+    <input type="range" id="sensitivity" min="0.5" max="3.0" step="0.1" value="1.0">
+  </div>
+  
+  <div class="checkbox-container">
+    <label class="checkbox-label">
+      <input type="checkbox" id="reverse"> Invert Direction
+    </label>
+  </div>
+  
+  <div class="button-container">
+    <button id="reset">Reset</button>
+    <button id="save">Save</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
