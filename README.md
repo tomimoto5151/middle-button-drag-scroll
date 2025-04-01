@@ -2,24 +2,26 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 
-Adds middle-button drag scroll functionality to Chrome on Mac. Enhance your browsing experience with intuitive scroll controls.
+Mac版Chromeに中ボタンのドラッグスクロール機能を追加、直感的なブラウジングを実現するChrome拡張機能です
 
-## 🚀 Features
+## 🚀 主な機能
 
-- 🖱️ Middle-button drag scrolling
-- 🔧 Scroll speed adjustment
-- 🔁 Scroll direction inversion
+* 中ボタンドラッグスクロール
+* スクロールのスピード調整
+* ドラッグの感度調整
+* スクロール方向の反転機能
 
-## 💻 Requirements
+## 💻 要件
 
-- Chrome / Chromium
+- Google Chrome for mac
 
-## 🛠️ Installation
+## 🛠️ セットアップ＆使い方
 
-1. Open Chrome extension management page
-2. Enable "Developer mode"
-3. Select "Load unpacked extension"
-4. Choose the extension folder
+1. Chromeで拡張機能の管理を開きます
+2. デベロッパーモードを有効にします
+3. パッケージ化されていない拡張機能を読み込むをクリックします
+4. ダウンロードした拡張機能フォルダを選びます
+5. 必要に応じて拡張機能からMiddle Button Drag Scrollをクリックして設定変更します
 
 ## 📞 Contact
 
